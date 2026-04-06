@@ -1,5 +1,5 @@
 locals {
-  security_group_id = var.create ? join("", tencentcloud_security_group.sg.*.id) : ""
+  security_group_id = var.create ? join("", tencentcloud_security_group.sg.*.id) : var.security_group_id
 }
 
 

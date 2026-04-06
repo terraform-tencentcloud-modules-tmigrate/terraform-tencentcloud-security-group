@@ -15,6 +15,12 @@ variable "create" {
   default     = true
 }
 
+variable "security_group_id" {
+  description = "used when create is false"
+  type = string
+  default = ""
+}
+
 variable "project_id" {
   description = "Project ID to create the firewall rules in."
   type        = string
