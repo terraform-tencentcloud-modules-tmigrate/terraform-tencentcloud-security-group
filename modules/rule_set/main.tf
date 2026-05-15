@@ -7,6 +7,7 @@ resource "tencentcloud_security_group" "sg" {
   count = var.create ? 1 : 0
   name = var.name
   project_id = var.project_id
+  tags = var.tags
 }
 
 resource "tencentcloud_security_group_rule_set" "rule_set" {
