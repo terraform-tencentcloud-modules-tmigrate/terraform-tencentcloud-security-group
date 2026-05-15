@@ -50,3 +50,7 @@ variable "default_egress_deny_all" {
   description = "the bottom of the egress, default deny all. "
 }
 
+variable "tags" {
+  type = map(string)
+  default = {}
+}
